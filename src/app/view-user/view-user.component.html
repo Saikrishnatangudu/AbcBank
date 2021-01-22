@@ -1,0 +1,46 @@
+
+
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Featured
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">FirstName:{{user.firstname}}</li>
+      <li class="list-group-item">{{user.lastname}}</li>
+      <li class="list-group-item">{{user.emailid}}</li>
+    </ul>
+  </div> -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark" >
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" >Home</a>
+        <a class="nav-item nav-link" routerLink="/transactions">MakeTransaction</a>
+        <a class="nav-item nav-link" routerLink="/listTransactions">view transactions</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+<div class="jumbotron" >
+<div class="card" style="width: 35rem;">
+  <div class="card-body">
+    <h5 class="card-title">User: {{currentUser.firstname}} {{currentUser.lastname}}</h5>
+    <p class="card-text"><strong>AccountStatus: </strong><span  style="color: green;">{{currentUser.accstatus}}</span></p>
+  </div>
+   <ul class="list-group list-group-flush">
+   <li class="list-group-item"><strong>AccountNumber: </strong>{{currentUser.account.AccNo}}
+     <br> <strong>Accounttype: </strong>{{currentUser.account.AccType}}<br>
+     <strong>AccountBalance: </strong>{{currentUser.account.balance}}
+    </li> 
+    <li class="list-group-item">     <strong>EmailId: </strong>{{currentUser.emailid}}<br>
+      <strong>Mobile No: </strong>{{currentUser.mobileno}}
+
+    </li>
+    
+  </ul>
+   <!-- <div class="card-body">
+    <a href="#" class="card-link" onclick='invoke()'>Card link</a>
+  </div>  -->
+</div>
+</div>
+<!-- 
+<a href="/users" onclick='invoke()'>click here r to view details</a>
+<button class="btn btn-lg btn-light" (click)="invoke()">click here r to view details</button> -->
+<router-outlet></router-outlet>

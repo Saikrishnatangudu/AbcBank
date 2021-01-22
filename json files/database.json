@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "firstname": "usera",
+      "lastname": "user",
+      "emailid": "usera@gmail.com",
+      "mobileno": "98454864646",
+      "gender": "Male",
+      "password": "usera",
+      "address": {
+        "street": "fdqwdfwd",
+        "city": "dfwefdwe",
+        "state": "fewfwef",
+        "pincode": "166145"
+      },
+      "accstatus": "active",
+      "role": "USER",
+      "id": 1,
+      "account": {
+        "AccNo": 2554,
+        "AccType": "savings",
+        "balance": 43500
+      }
+    },
+ 
+    {
+      "firstname": "gowri",
+      "lastname": "gowri",
+      "emailid": "gowri@gmail.com",
+      "mobileno": "4646464",
+      "gender": "Male",
+      "password": "gowri",
+      "address": {
+        "street": "bmn bj",
+        "city": "jnlkkl",
+        "state": "bjknjk",
+        "pincode": "5316"
+      },
+      "accstatus": "active",
+      "role": "USER",
+      "id": 3,
+      "account": {
+        "AccNo": 2555,
+        "AccType": "savings",
+        "balance": 50000
+      }
+    },
+    {
+      "firstname": "admin",
+      "lastname": "admin",
+      "emailid": "admin@gmail.com",
+      "mobileno": "0000000000",
+      "gender": "Male",
+      "password": "admin",
+      "address": {
+        "street": "fdsfcdsf",
+        "city": "dfdsfdf",
+        "state": "dfdsf",
+        "pincode": "166666"
+      },
+      "accstatus": "active",
+      "role": "ADMIN",
+      "id": 4
+    },
+    {
+      "firstname": "gggggg",
+      "lastname": "ggggggg",
+      "emailid": "gggggggggg",
+      "mobileno": "999999",
+      "gender": "Male",
+      "password": "aaaa",
+      "address": {
+        "street": "kjnjknd",
+        "city": "kjoljlwd",
+        "state": " kjj",
+        "pincode": "dwdw"
+      },
+      "accstatus": "active",
+      "role": "USER",
+      "id": 5,
+      "account": {
+        "AccNo": 5555,
+        "AccType": "reccuring",
+        "balance": 0
+      }
+    },
+    {
+      "firstname": "kavya",
+      "lastname": "kintali",
+      "emailid": "kavya@gmail.com",
+      "mobileno": "5965616",
+      "gender": "Female",
+      "password": "xcxzcxzc",
+      "address": {
+        "street": "xvxczxcv",
+        "city": "czxcxzc",
+        "state": "cxzcxzc",
+        "pincode": "xczxcxz"
+      },
+      "accstatus": "active",
+      "role": "USER",
+      "id": 6,
+      "account": {
+        "AccNo": 6666,
+        "AccType": "reccuring",
+        "balance": 0
+      }
+    },
+    {
+      "firstname": "json",
+      "lastname": "json",
+      "emailid": "json@gmail.com",
+      "mobileno": "998988998",
+      "gender": "Male",
+      "password": "json",
+      "address": {
+        "street": "cascsadv",
+        "city": "vdvsdv",
+        "state": "khbi",
+        "pincode": "13223"
+      },
+      "accstatus": "active",
+      "role": "USER",
+      "id": 7,
+      "account": {
+        "AccNo": 33233,
+        "AccType": "Savings",
+        "balance": 0
+      }
+    }
+  ]
+}

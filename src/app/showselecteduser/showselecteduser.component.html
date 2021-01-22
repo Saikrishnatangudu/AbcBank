@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <div class="card" style="width: 35rem;">
+    <div class="card-body">
+      <h5 class="card-title">User: {{userda.firstname}} {{userda.lastname}}</h5>
+      <p class="card-text"><strong>AccountStatus: </strong><span style="color: green;">{{userda.accstatus}}</span></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>AccountNumber: </strong>{{userda.account.AccNo}}
+        <br> <strong>Accounttype: </strong>{{userda.account.AccType}}<br>
+        <strong>AccountBalance: </strong>{{userda.account.balance}}
+      </li>
+      <li class="list-group-item"> <strong>EmailId: </strong>{{userda.emailid}}<br>
+        <strong>Mobile No: </strong>{{userda.mobileno}}
+
+      </li>
+
+    </ul>
+    <!-- <div class="card-body">
+        <a href="#" class="card-link" onclick='invoke()'>Card link</a>
+      </div>  -->
+    <button class="btn btn-primary btn-sm" (click)="goback()">Back</button>
+  </div>
+</div>

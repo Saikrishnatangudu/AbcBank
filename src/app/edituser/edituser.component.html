@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <div class="card" style="width: 35rem;">
+    <div class="card-body">
+      <h5 class="card-title">User: {{user.firstname}} {{user.lastname}}</h5>
+      <p class="card-text"><strong>AccountStatus: </strong><span style="color:red;">{{user.accstatus}}</span></p>
+    </div>
+
+    <li class="list-group-item"> <strong>EmailId: </strong>{{user.emailid}}<br>
+      <strong>Mobile No: </strong>{{user.mobileno}}
+
+    </li>
+  </div>
+</div>
+
+<p style="color: green;">Enter the Accountdetails to update and make it to Active</p>
+<div class="card" style="width: 18rem;">
+  <label for="">AccountNo</label>
+  <input type="number" [(ngModel)]=accno class="form-control">
+  <label for="">AccountType</label>
+  <select class="custom-select-sm" [(ngModel)]="selectedItem" (change)="selected()">
+    <option value={{item}} *ngFor="let item of items; index as i;"> {{item}}</option>
+  </select>
+
+  <button class="btn btn-group-lg btn-info" (click)="update()">UpdateUser</button>
+
+</div>

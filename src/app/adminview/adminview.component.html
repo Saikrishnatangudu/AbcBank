@@ -1,0 +1,28 @@
+<table class="table table-striped table-hover" *ngIf="userlist">
+  <thead>
+    <tr>
+
+      <th>firstname</th>
+      <th>emailid</th>
+      <th>mobileno</th>
+      <th>accstatus</th>
+
+
+    </tr>
+  </thead>
+  <tbody *ngFor="let t of userlist; let i = index">
+    <tr>
+
+      <td>{{t.firstname}}</td>
+      <td>{{t.emailid}}</td>
+      <td>{{t.mobileno}}</td>
+      <td style="color: Green;">{{t.accstatus}}</td>
+      <td><button class="btn btn-secondary" (click)="
+            editusr(t)" *ngIf="t.accstatus==='inactive'">EDIT</button></td>
+      <td><button class="btn btn-info" (click)="
+            view(t)" *ngIf="t.accstatus==='active'">VIEW</button></td>
+
+    </tr>
+
+  </tbody>
+</table>

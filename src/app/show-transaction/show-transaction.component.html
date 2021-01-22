@@ -1,0 +1,68 @@
+<div class="jumbotron">
+  <h4>Transactions</h4>
+
+
+  <div>
+    <label for="">filterBy :</label>
+    <select class="custom-select-sm" [(ngModel)]="selectedItem" (change)="selected()">
+      <option value={{item}} *ngFor="let item of items; index as i;"> {{item}}</option>
+
+    </select>
+
+    <div [ngSwitch]="selectedItem">
+      <div *ngSwitchCase="'accNo'">
+        <label for="">Enter RecipientAccountNo</label>
+        <input type="number" [(ngModel)]='accNo'>
+
+        <button class="btn btn-md btn-secondary btn-style" (click)="getlistbyAccono(accNo)">Get Transactions</button>
+      </div>
+    </div>
+
+
+    <div [ngSwitch]="selectedItem">
+      <div *ngSwitchCase="'ammount'">
+        <label for="">Enter Ammount</label>
+        <input type="number" [(ngModel)]='ammount'>
+
+        <button class="btn btn-md btn-secondary btn-style" (click)="getlist(ammount)">Get Transactions</button>
+      </div>
+    </div>
+
+
+    <div [ngSwitch]="selectedItem">
+      <div *ngSwitchCase="'date'">
+        <label for="">start Date</label>
+        <input type="date" [(ngModel)]='sd'>
+        {{sd}}
+
+        <label for="">End Date</label>
+        <input type="date" [(ngModel)]='ed'>
+
+        {{ed}}
+
+        <button class="btn btn-md btn-secondary btn-style" (click)="getBydate(sd,ed)">Get Transactions</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn" (click)="goback()">BacktoHome</button>
+
+
+</div>
+
+<div *ngFor="let t of trasactionlist; let i = index">
+  <div class="card" style="width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title">TransactionsDetails</h5>
+      <p>transactionId: {{t.transactionId}}</p>
+      <p> fromAccNo: {{t.fromAccNo}}</p>
+      <p>toAccNo: {{t.toAccNo}}</p>
+      <p>transactionAmmount: {{t.transactionAmmount}}</p>
+      <p>transactionDate: {{t.transactionDate}}</p>
+      <p>transactionRemarks: {{t.transactionRemarks}}</p>
+      <p>BalanceOnDate: {{t.BalanceOnDate}}</p>
+
+
+    </div>
+  </div>
+</div>
